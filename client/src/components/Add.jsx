@@ -18,7 +18,7 @@ function Add() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/products', product);
+      const response = await axios.post('https://inventory-list-99a9.onrender.com/api/products', product);
       setMessage('Product added successfully!');
       setProduct({ name: '', desc: '', price: '', stock: '' });
     } catch (err) {

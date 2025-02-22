@@ -6,7 +6,7 @@ function Get() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/products')
+    axios.get('https://inventory-list-99a9.onrender.com/api/products')
       .then(response => setProducts(response.data))
       .catch(err => console.error(err.message));
   }, []);
